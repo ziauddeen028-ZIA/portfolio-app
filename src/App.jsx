@@ -135,7 +135,7 @@ function Hero({ setActive }) {
             </a>
           </div>
           <div className="flex gap-5">
-            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
+            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"],["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
               <a key={l} href={h} target="_blank" rel="noreferrer" className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l} ↗</a>
             ))}
           </div>
@@ -148,9 +148,10 @@ function Hero({ setActive }) {
               <img
                 src={img3}
                 alt="Ziauddeen"
-                className="relative z-10 w-56 h-56 rounded-3xl object-cover 
-  border-4 border-white/20 
-  shadow-[0_0_70px_rgba(99,102,241,0.6)]"
+                className="relative z-10 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 
+rounded-3xl object-cover object-center
+border-4 border-white/20 
+shadow-[0_0_70px_rgba(99,102,241,0.6)]"
               />
               <div className="relative z-10 text-center">
                 <p className="text-white font-bold text-lg">Ziauddeen S</p>
@@ -192,8 +193,8 @@ function About() {
         <div ref={ref} className={`grid md:grid-cols-2 gap-14 items-center transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-72 h-72 sm:w-72 sm:h-72 rounded-3xl bg-gradient-to-br from-violet-600/30 to-indigo-600/20 border border-white/10 backdrop-blur-sm flex items-center justify-center">
-                <div className="text-center"><div className="text-8xl mb-3">
+              <div className="w-72 h-90 sm:w-72 sm:h-72 rounded-3xl bg-gradient-to-br from-violet-600/30 to-indigo-600/20 border border-white/10 backdrop-blur-sm flex items-center justify-center">
+                <div className="text-center mb-6"><div className="text-8xl mb-2">
                   <img
                     src={img1}
                     alt="Ziauddeen"
@@ -460,6 +461,10 @@ function Contact() {
             <div className="flex gap-3">
               <a href="https://github.com/ziauddeen028-ZIA" target="_blank" rel="noreferrer" className="px-5 py-2.5 rounded-xl border border-white/10 bg-white/8 hover:bg-white/15 text-slate-300 text-sm font-semibold transition-all hover:-translate-y-0.5">GitHub ↗</a>
               <a href="https://www.linkedin.com/in/ziauddeen-s" target="_blank" rel="noreferrer" className="px-5 py-2.5 rounded-xl border border-blue-500/30 bg-blue-600/20 hover:bg-blue-600/30 text-blue-300 text-sm font-semibold transition-all hover:-translate-y-0.5">LinkedIn ↗</a>
+              <a href="https://www.instagram.com/zia_uddeen_09/" target="_blank" rel="noreferrer"
+                className="px-5 py-2.5 rounded-xl border border-pink-500/30 bg-pink-600/20 hover:bg-pink-600/30 text-pink-300 text-sm font-semibold transition-all hover:-translate-y-0.5">
+                Instagram ↗
+              </a>
             </div>
           </div>
           <div className="rounded-2xl border border-white/8 bg-white/3 backdrop-blur-sm p-6 hover:border-violet-500/15 transition-colors">
@@ -501,7 +506,7 @@ function Footer({ setActive }) {
             {navLinks.map(l => <button key={l} onClick={() => setActive(l)} className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l}</button>)}
           </div>
           <div className="flex gap-4">
-            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
+            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"],["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
               <a key={l} href={h} target="_blank" rel="noreferrer" className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l}</a>
             ))}
           </div>
