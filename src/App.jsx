@@ -128,14 +128,15 @@ function Hero({ setActive }) {
             </button>
             <a
               href="/resume.pdf"
-              download
-              className="px-8 py-3.5 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-sm transition-all hover:-translate-y-0.5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3.5 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 text-slate-300 font-semibold text-sm"
             >
               ↓ Download Resume
             </a>
           </div>
           <div className="flex gap-5">
-            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"],["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
+            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"], ["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
               <a key={l} href={h} target="_blank" rel="noreferrer" className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l} ↗</a>
             ))}
           </div>
@@ -324,7 +325,14 @@ function Projects() {
                   <img
                     src={preview}
                     alt="Biolife Website"
-                    className="w-full h-56 object-cover hover:scale-105 transition-transform duration-500"
+                    className="
+  w-full 
+  h-[200px] 
+  object-cover
+
+  md:h-auto 
+  md:object-contain
+"
                   />
 
                 </div>
@@ -506,7 +514,7 @@ function Footer({ setActive }) {
             {navLinks.map(l => <button key={l} onClick={() => setActive(l)} className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l}</button>)}
           </div>
           <div className="flex gap-4">
-            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"],["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
+            {[["GitHub", "https://github.com/ziauddeen028-ZIA"], ["LinkedIn", "https://www.linkedin.com/in/ziauddeen-s"], ["Instagram", "https://www.instagram.com/zia_uddeen_09/"], ["Email", "mailto:ziauddeen028@gmail.com"]].map(([l, h]) => (
               <a key={l} href={h} target="_blank" rel="noreferrer" className="text-xs text-slate-500 hover:text-violet-300 transition-colors">{l}</a>
             ))}
           </div>
