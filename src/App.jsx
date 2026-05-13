@@ -2,8 +2,10 @@ import { useState, useEffect, useRef } from "react";
 import img3 from "./assets/img3.png";
 import img2 from "./assets/img2.png";
 import img1 from "./assets/img1.png";
-import logo from "./assets/Bio-logo.jpeg";
-import preview from "./assets/Biolife.png";
+import logo1 from "./assets/Bio-logo.jpeg";
+import preview1 from "./assets/Biolife.png";
+import logo2 from "./assets/gr-logo.png";
+import preview2 from "./assets/grgym.png";
 
 /* ── Hooks ─────────────────────────────────────────────────────────────── */
 function useTyping(words, speed = 90, pause = 1800) {
@@ -303,7 +305,7 @@ function Projects() {
             <div className="relative grid md:grid-cols-5 gap-10 items-center">
               <div className="md:col-span-3">
                 <img
-                  src={logo}
+                  src={logo1}
                   alt="Biolife Logo"
                   className="w-14 h-14 mb-5 object-contain"
                 />
@@ -323,7 +325,7 @@ function Projects() {
                 <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg hover:shadow-violet-500/20 transition-all">
 
                   <img
-                    src={preview}
+                    src={preview1}
                     alt="Biolife Website"
                     className="
   w-full 
@@ -341,6 +343,58 @@ function Projects() {
 
               </div>
             </div>
+            
+          </div>
+
+
+          {/* second project GR GYM */}
+          <div className="group relative rounded-3xl border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-indigo-500/5 to-transparent p-8 md:p-10 mb-10 overflow-hidden hover:border-violet-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/10">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl group-hover:bg-violet-500/15 transition-all duration-500" />
+            <div className="relative grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-3">
+                <img
+                  src={logo2}
+                  alt="gym Logo"
+                  className="w-14 h-14 mb-5 object-contain"
+                />
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-3">GR GYM FITNESS Website</h3>
+                <p className="text-slate-400 text-sm leading-7 mb-6"> Developed a modern and responsive website for GR GYM FITNESS with an energetic UI and smooth user experience. Designed to showcase fitness programs, gym facilities, and membership details with clean navigation. Developed using React.js, Tailwind CSS, and JavaScript.</p>
+                <ul className="flex flex-col gap-2 mb-7">
+                  {["Fully responsive layout", "Product showcase section", "Smooth UX navigation"].map(f => (
+                    <li key={f} className="flex items-center gap-2 text-sm text-slate-300"><span className="text-violet-400 text-xs">▸</span>{f}</li>
+                  ))}
+                </ul>
+                <a href="https://grgymfitness.vercel.app/" target="_blank" rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:-translate-y-0.5">
+                  🔗 Live Demo
+                </a>
+              </div>
+              <div className="md:col-span-2">
+                <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg hover:shadow-violet-500/20 transition-all">
+
+                  <img
+                    src={preview2}
+                    alt="Biolife Website"
+                    className="
+  w-full 
+  h-[200px] 
+  object-cover
+
+  md:h-auto 
+  md:object-contain
+"
+                  />
+
+                </div>
+
+                {/* Tech stack below */}
+
+              </div>
+            </div>
+            
+
+
+
           </div>
           <p className="text-xs text-slate-500 font-semibold uppercase tracking-widest mb-5">Other Projects</p>
           <div className="grid sm:grid-cols-2 gap-5">
