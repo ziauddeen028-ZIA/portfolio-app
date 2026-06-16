@@ -6,7 +6,14 @@ import logo1 from "./assets/Bio-logo.jpeg";
 import preview1 from "./assets/Biolife.png";
 import logo2 from "./assets/gr-logo.png";
 import preview2 from "./assets/grgym.png";
+import zammuLogo from "./assets/zammu-logo.png";
+import zammuPreview from "./assets/zammu-preview.png";
 
+import actsLogo from "./assets/acts-logo.png";
+import actsPreview from "./assets/acts-preview.png";
+
+import calmLogo from "./assets/calm-logo.png";
+import calmPreview from "./assets/calm-preview.png";
 /* ── Hooks ─────────────────────────────────────────────────────────────── */
 function useTyping(words, speed = 90, pause = 1800) {
   const [display, setDisplay] = useState("");
@@ -300,6 +307,83 @@ function Projects() {
         <SectionLabel sub="Things I've built" title="Projects" />
         <div ref={ref} className={`transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <p className="text-xs text-violet-400 font-semibold uppercase tracking-widest mb-4">⭐ Featured Project</p>
+
+          {/* Calm & Cozy E-Commerce Website */}
+          <div className="group relative rounded-3xl border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-indigo-500/5 to-transparent p-8 md:p-10 mb-10 overflow-hidden hover:border-violet-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/10">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl group-hover:bg-violet-500/15 transition-all duration-500" />
+
+            <div className="relative grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-3">
+                <img
+                  src={calmLogo}
+                  alt="Calm & Cozy Logo"
+                  className="w-14 h-14 mb-5 object-contain"
+                />
+
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-3">
+                  Calm & Cozy E-Commerce Website
+                </h3>
+
+                <p className="text-slate-400 text-sm leading-7 mb-6">
+                  Designed and developed a fully responsive e-commerce website for
+                  Calm & Cozy, featuring lifestyle, home décor, wellness, and everyday
+                  essentials. The platform delivers a seamless shopping experience with
+                  organized product collections, detailed product pages, intuitive
+                  navigation, and an engaging user interface optimized for all devices.
+                </p>
+
+                <ul className="flex flex-col gap-2 mb-7">
+                  {[
+                    "E-commerce product catalog",
+                    "Responsive shopping experience",
+                    "Product showcase & collections",
+                  ].map((f) => (
+                    <li
+                      key={f}
+                      className="flex items-center gap-2 text-sm text-slate-300"
+                    >
+                      <span className="text-violet-400 text-xs">▸</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="https://calmandcozy.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:-translate-y-0.5"
+                >
+                  🔗 Live Demo
+                </a>
+              </div>
+
+              <div className="md:col-span-2">
+                <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg hover:shadow-violet-500/20 transition-all">
+                  <img
+                    src={calmPreview}
+                    alt="Calm & Cozy E-Commerce Website"
+                    className="w-full h-[200px] object-cover md:h-auto md:object-contain"
+                  />
+                </div>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mt-5">
+                  {["React.js", "Tailwind CSS", "JavaScript", "Responsive Design"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 rounded-full text-xs font-medium bg-violet-500/10 border border-violet-500/20 text-violet-300"
+                      >
+                        {tech}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="group relative rounded-3xl border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-indigo-500/5 to-transparent p-8 md:p-10 mb-10 overflow-hidden hover:border-violet-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/10">
             <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl group-hover:bg-violet-500/15 transition-all duration-500" />
             <div className="relative grid md:grid-cols-5 gap-10 items-center">
@@ -343,7 +427,7 @@ function Projects() {
 
               </div>
             </div>
-            
+
           </div>
 
 
@@ -391,11 +475,137 @@ function Projects() {
 
               </div>
             </div>
-            
+
 
 
 
           </div>
+          {/* Zammu Physio */}
+          <div className="group relative rounded-3xl border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-indigo-500/5 to-transparent p-8 md:p-10 mb-10 overflow-hidden hover:border-violet-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/10">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl group-hover:bg-violet-500/15 transition-all duration-500" />
+
+            <div className="relative grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-3">
+                <img
+                  src={zammuLogo}
+                  alt="Zammu Physio Logo"
+                  className="w-14 h-14 mb-5 object-contain"
+                />
+
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-3">
+                  Zammu Physio Care Website
+                </h3>
+
+                <p className="text-slate-400 text-sm leading-7 mb-6">
+                  Developed a professional and responsive website for Zammu Physio Care,
+                  focused on physiotherapy services, rehabilitation programs, and patient
+                  care information. Built with a clean user interface and seamless
+                  navigation to enhance user engagement and accessibility.
+                </p>
+
+                <ul className="flex flex-col gap-2 mb-7">
+                  {[
+                    "Fully responsive design",
+                    "Service showcase section",
+                    "Appointment & contact information",
+                  ].map((f) => (
+                    <li
+                      key={f}
+                      className="flex items-center gap-2 text-sm text-slate-300"
+                    >
+                      <span className="text-violet-400 text-xs">▸</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="https://www.zammuphysiocare.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:-translate-y-0.5"
+                >
+                  🔗 Live Demo
+                </a>
+              </div>
+
+              <div className="md:col-span-2">
+                <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg hover:shadow-violet-500/20 transition-all">
+                  <img
+                    src={zammuPreview}
+                    alt="Zammu Physio Website"
+                    className="w-full h-[200px] object-cover md:h-auto md:object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ACTS Physio */}
+          <div className="group relative rounded-3xl border border-violet-500/25 bg-gradient-to-br from-violet-500/10 via-indigo-500/5 to-transparent p-8 md:p-10 mb-10 overflow-hidden hover:border-violet-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-violet-500/10">
+            <div className="absolute top-0 right-0 w-80 h-80 bg-violet-500/8 rounded-full blur-3xl group-hover:bg-violet-500/15 transition-all duration-500" />
+
+            <div className="relative grid md:grid-cols-5 gap-10 items-center">
+              <div className="md:col-span-3">
+                <img
+                  src={actsLogo}
+                  alt="ACTS Physio Logo"
+                  className="w-14 h-14 mb-5 object-contain"
+                />
+
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-3">
+                  ACTS Physiotherapy Website
+                </h3>
+
+                <p className="text-slate-400 text-sm leading-7 mb-6">
+                  Designed and developed a modern physiotherapy clinic website for ACTS
+                  Physiotherapy. The platform highlights treatment services, expert care,
+                  patient-focused solutions, and contact information through a clean and
+                  responsive interface.
+                </p>
+
+                <ul className="flex flex-col gap-2 mb-7">
+                  {[
+                    "Mobile-friendly layout",
+                    "Treatment & service sections",
+                    "Smooth navigation experience",
+                  ].map((f) => (
+                    <li
+                      key={f}
+                      className="flex items-center gap-2 text-sm text-slate-300"
+                    >
+                      <span className="text-violet-400 text-xs">▸</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="https://www.actsphysiotherapy.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white text-sm font-semibold transition-all hover:shadow-xl hover:shadow-violet-500/30 hover:-translate-y-0.5"
+                >
+                  🔗 Live Demo
+                </a>
+              </div>
+
+              <div className="md:col-span-2">
+                <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg hover:shadow-violet-500/20 transition-all">
+                  <img
+                    src={actsPreview}
+                    alt="ACTS Physiotherapy Website"
+                    className="w-full h-[200px] object-cover md:h-auto md:object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
           <p className="text-xs text-slate-500 font-semibold uppercase tracking-widest mb-5">Other Projects</p>
           <div className="grid sm:grid-cols-2 gap-5">
             {others.map(p => (
